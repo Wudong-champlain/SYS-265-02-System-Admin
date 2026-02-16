@@ -1,0 +1,13 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens18:
+      dhcp4: no
+      addresses: [10.0.5.12/24]
+      nameservers:
+        addresses: [10.0.5.5]
+        search: [wu.local]
+      routes:
+        - to: default
+          via: 10.0.5.2
