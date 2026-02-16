@@ -1,3 +1,9 @@
-docker01 configuration
-Hostname: docker01-wu
-IP: 10.0.5.12
+docker01 configuration files for SYS-265
+
+Included:
+- netplan yaml (network settings)
+- hostname
+- hosts
+
+Security note:
+Do not store passwords, tokens, or private keys in this repo.
